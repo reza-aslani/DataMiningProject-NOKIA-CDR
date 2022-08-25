@@ -1,0 +1,36 @@
+
+00 Header record
+* 01 Mobile-originated call
+* 02 Mobile-terminated call
+03 Forwarded call
+04 Call to a roaming subscriber
+05 Supplementary service
+06 HLR interrogation
+07 Location update
+* 08 Short message service (point-to-point), mobile-originated
+* 09 Short message service (point-to-point), mobile-terminated
+10 Trailer record
+* 11 PSTN-originated call
+* 12 PSTN-terminated call
+13 PBX-originated call
+14 PBX-terminated call
+15 Use of hardware
+16 Intelligent network data 1
+17 Unsuccessful call attempt
+18 Intelligent network data 2
+19 Intelligent network data 3
+20 Device-originated call
+22 Remote charging control
+23 IN-forwarded short message service
+24 Camel-originated call
+25 Camel-terminated call
+26 Intelligent network data 4
+27 Location service
+28 Intelligent network data 5
+29 Unstructured supplementary service data
+30 SIP-originated call
+31 SIP-terminated call
+32 SIP-originating message
+33 SIP-terminating message
+35 SIP CDR for registration
+

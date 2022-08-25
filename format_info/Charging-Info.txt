@@ -1,0 +1,951 @@
+GAP::ST=A,UF=NORMAL,FT=1,OF=T,;
+
+MSCi      MSEFA                     2018-12-18  14:59:36
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      1
+MESSAGE NUMBER:   dd98
+FORMAT TYPE NAME: MOC
+RECORD LENGTH:    374
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+intermediate_record_number                    BCD(  1)        25
+intermediate_charging_ind                       C(  1)        26
+number_of_ss_records                          BCD(  1)        27
+calling_imsi                                    C(  8)        28
+calling_imei                                    C(  8)        36
+calling_number                                  C( 10)        44
+calling_category                                C(  1)        54
+calling_ms_classmark                            C(  1)        55
+called_imsi                                     C(  8)        56
+called_imei                                     C(  8)        64
+dialled_digits_ton                              C(  1)        72
+called_number                                   C( 12)        73
+called_category                                 C(  1)        85
+called_ms_classmark                             C(  1)        86
+dialled_digits                                  C( 12)        87
+calling_subs_first_lac                          W(  1)        99
+calling_subs_first_ci                           W(  1)       101
+calling_subs_last_ex_id                         C( 10)       103
+calling_subs_last_lac                           W(  1)       113
+calling_subs_last_ci                            W(  1)       115
+called_subs_first_lac                           W(  1)       117
+called_subs_first_ci                            W(  1)       119
+called_subs_last_ex_id                          C( 10)       121
+called_subs_last_lac                            W(  1)       131
+called_subs_last_ci                             W(  1)       133
+out_circuit_group                             BCD(  2)       135
+out_circuit                                   BCD(  2)       137
+basic_service_type                              C(  1)       139
+basic_service_code                              C(  1)       140
+facility_usage                                  C(  4)       141
+non_transparency_indicator                      C(  1)       145
+channel_rate_indicator                          C(  1)       146
+set_up_start_time                               C(  7)       147
+in_channel_allocated_time                       C(  7)       154
+charging_start_time                             C(  7)       161
+charging_end_time                               C(  7)       168
+orig_mcz_duration                             BCD(  3)       175
+cause_for_termination                          DW(  1)       178
+data_volume                                     W(  1)       182
+call_type                                       C(  1)       184
+orig_mcz_tariff_class                         BCD(  3)       185
+orig_mcz_pulses                               BCD(  2)       188
+dtmf_indicator                                  C(  1)       190
+aoc_indicator                                   C(  1)       191
+connected_to_number_ton                         C(  1)       192
+connected_to_number                             C( 12)       193
+leg_call_reference                              C(  5)       205
+intermediate_chrg_cause                         C(  2)       210
+cug_interlock                                   C(  4)       212
+cug_outgoing_access                             C(  1)       216
+hot_billing_record_number                     BCD(  4)       217
+cug_information                                 C(  1)       221
+calling_modify_parameters                       C( 14)       222
+orig_mcz_modify_percent                         W(  1)       236
+orig_mcz_modify_direction                       C(  1)       238
+orig_dialling_class                             W(  1)       239
+orig_mcz_change_percent                         C(  1)       241
+orig_mcz_change_direction                       C(  1)       242
+number_of_in_records                          BCD(  1)       243
+speech_version                                  C(  1)       244
+camel_call_reference                            C(  8)       245
+camel_exchange_id_ton                           C(  1)       253
+camel_exchange_id                               C(  9)       254
+scp_connection                                  C(  1)       263
+number_of_all_in_records                      BCD(  1)       264
+call_reference_time                             C(  7)       265
+routing_category                                C(  1)       272
+add_routing_category                            W(  1)       273
+outside_user_plane_index                      BCD(  2)       275
+outside_control_plane_index                   BCD(  2)       277
+out_bnc_connection_type                         C(  1)       279
+emergency_call_category                         C(  1)       280
+selected_codec                                  C(  1)       281
+rate_adaption                                   C(  1)       282
+called_subs_first_mcc                           C(  2)       283
+called_subs_first_mnc                           C(  2)       285
+called_subs_last_ex_id_ton                      C(  1)       287
+called_subs_last_mcc                            C(  2)       288
+called_subs_last_mnc                            C(  2)       290
+calling_subs_first_mcc                          C(  2)       292
+calling_subs_first_mnc                          C(  2)       294
+calling_subs_last_ex_id_ton                     C(  1)       296
+calling_subs_last_mcc                           C(  2)       297
+calling_subs_last_mnc                           C(  2)       299
+radio_network_type                              C(  1)       301
+req_air_interface_user_rate                     C(  1)       302
+req_fixed_nw_user_rate                          C(  1)       303
+used_air_interface_user_rate                    C(  1)       304
+used_fixed_nw_user_rate                         C(  1)       305
+loc_routing_number                              C( 12)       306
+loc_routing_number_ton                          C(  1)       318
+npdb_query_status                               C(  1)       319
+in_circuit                                    BCD(  2)       320
+in_circuit_group                              BCD(  2)       322
+in_circuit_group_name                           C( 16)       324
+out_circuit_group_name                          C( 16)       340
+outpulsed_number                                C( 16)       356
+outpulsed_number_ton                            C(  1)       372
+loc_routing_number_orig                         C(  1)       373
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+< GAP::ST=A,UF=NORMAL,FT=2,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:00:08
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      2
+MESSAGE NUMBER:   dd97
+FORMAT TYPE NAME: MTC
+RECORD LENGTH:    282
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+intermediate_record_number                    BCD(  1)        25
+intermediate_charging_ind                       C(  1)        26
+number_of_ss_records                          BCD(  1)        27
+calling_number                                  C( 10)        28
+called_imsi                                     C(  8)        38
+called_imei                                     C(  8)        46
+called_number                                   C( 12)        54
+called_category                                 C(  1)        66
+called_ms_classmark                             C(  1)        67
+in_circuit_group                              BCD(  2)        68
+in_circuit                                    BCD(  2)        70
+called_subs_first_lac                           W(  1)        72
+called_subs_first_ci                            W(  1)        74
+called_subs_last_ex_id                          C( 10)        76
+called_subs_last_lac                            W(  1)        86
+called_subs_last_ci                             W(  1)        88
+basic_service_type                              C(  1)        90
+basic_service_code                              C(  1)        91
+facility_usage                                  C(  4)        92
+non_transparency_indicator                      C(  1)        96
+channel_rate_indicator                          C(  1)        97
+set_up_start_time                               C(  7)        98
+in_channel_allocated_time                       C(  7)       105
+charging_start_time                             C(  7)       112
+charging_end_time                               C(  7)       119
+term_mcz_duration                             BCD(  3)       126
+cause_for_termination                          DW(  1)       129
+data_volume                                     W(  1)       133
+call_type                                       C(  1)       135
+term_mcz_tariff_class                         BCD(  3)       136
+term_mcz_pulses                               BCD(  2)       139
+dtmf_indicator                                  C(  1)       141
+aoc_indicator                                   C(  1)       142
+leg_call_reference                              C(  5)       143
+intermediate_chrg_cause                         C(  2)       148
+cug_interlock                                   C(  4)       150
+cug_outgoing_access                             C(  1)       154
+hot_billing_record_number                     BCD(  4)       155
+cug_information                                 C(  1)       159
+called_modify_parameters                        C( 14)       160
+term_mcz_modify_percent                         W(  1)       174
+term_mcz_modify_direction                       C(  1)       176
+term_mcz_change_percent                         C(  1)       177
+term_mcz_change_direction                       C(  1)       178
+number_of_in_records                          BCD(  1)       179
+speech_version                                  C(  1)       180
+camel_call_reference                            C(  8)       181
+camel_exchange_id_ton                           C(  1)       189
+camel_exchange_id                               C(  9)       190
+scp_connection                                  C(  1)       199
+number_of_all_in_records                      BCD(  1)       200
+call_reference_time                             C(  7)       201
+routing_category                                C(  1)       208
+add_routing_category                            W(  1)       209
+inside_user_plane_index                       BCD(  2)       211
+inside_control_plane_index                    BCD(  2)       213
+in_bnc_connection_type                          C(  1)       215
+selected_codec                                  C(  1)       216
+rate_adaption                                   C(  1)       217
+called_subs_first_mcc                           C(  2)       218
+called_subs_first_mnc                           C(  2)       220
+called_subs_last_ex_id_ton                      C(  1)       222
+called_subs_last_mcc                            C(  2)       223
+called_subs_last_mnc                            C(  2)       225
+radio_network_type                              C(  1)       227
+req_air_interface_user_rate                     C(  1)       228
+req_fixed_nw_user_rate                          C(  1)       229
+used_air_interface_user_rate                    C(  1)       230
+used_fixed_nw_user_rate                         C(  1)       231
+loc_routing_number                              C( 12)       232
+loc_routing_number_ton                          C(  1)       244
+in_circuit_group_name                           C( 16)       245
+out_circuit                                   BCD(  2)       261
+out_circuit_group                             BCD(  2)       263
+out_circuit_group_name                          C( 16)       265
+loc_routing_number_orig                         C(  1)       281
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+MAIN LEVEL COMMAND <___>
+< GAP::ST=A,UF=NORMAL,FT=3,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:03:12
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      3
+MESSAGE NUMBER:   dd96
+FORMAT TYPE NAME: FORW
+RECORD LENGTH:    362
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+intermediate_record_number                    BCD(  1)        25
+intermediate_charging_ind                       C(  1)        26
+number_of_ss_records                          BCD(  1)        27
+cause_for_forwarding                            C(  1)        28
+forwarding_imsi                                 C(  8)        29
+forwarding_imei                                 C(  8)        37
+forwarding_number                               C( 12)        45
+forwarding_category                             C(  1)        57
+forwarding_ms_classmark                         C(  1)        58
+forwarded_to_imsi                               C(  8)        59
+forwarded_to_imei                               C(  8)        67
+forwarded_to_number                             C( 12)        75
+forwarded_to_ms_classmark                       C(  1)        87
+orig_calling_number                             C( 10)        88
+in_circuit_group                              BCD(  2)        98
+in_circuit                                    BCD(  2)       100
+forwarding_first_lac                            W(  1)       102
+forwarding_first_ci                             W(  1)       104
+forwarding_last_ex_id                           C( 10)       106
+forwarding_last_lac                             W(  1)       116
+forwarding_last_ci                              W(  1)       118
+forwarded_to_first_lac                          W(  1)       120
+forwarded_to_first_ci                           W(  1)       122
+forwarded_to_last_ex_id                         C( 10)       124
+forwarded_to_last_lac                           W(  1)       134
+forwarded_to_last_ci                            W(  1)       136
+out_circuit_group                             BCD(  2)       138
+out_circuit                                   BCD(  2)       140
+basic_service_type                              C(  1)       142
+basic_service_code                              C(  1)       143
+facility_usage                                  C(  4)       144
+non_transparency_indicator                      C(  1)       148
+channel_rate_indicator                          C(  1)       149
+set_up_start_time                               C(  7)       150
+in_channel_allocated_time                       C(  7)       157
+charging_start_time                             C(  7)       164
+charging_end_time                               C(  7)       171
+forw_mcz_duration                             BCD(  3)       178
+cause_for_termination                          DW(  1)       181
+data_volume                                     W(  1)       185
+call_type                                       C(  1)       187
+forw_mcz_tariff_class                         BCD(  3)       188
+forw_mcz_pulses                               BCD(  2)       191
+dtmf_indicator                                  C(  1)       193
+aoc_indicator                                   C(  1)       194
+forwarded_to_number_ton                         C(  1)       195
+connected_to_number_ton                         C(  1)       196
+connected_to_number                             C( 12)       197
+orig_called_number_ton                          C(  1)       209
+orig_called_number                              C( 12)       210
+leg_call_reference                              C(  5)       222
+intermediate_chrg_cause                         C(  2)       227
+cug_interlock                                   C(  4)       229
+cug_outgoing_access                             C(  1)       233
+hot_billing_record_number                     BCD(  4)       234
+cug_information                                 C(  1)       238
+orig_dialling_class                             W(  1)       239
+forw_mcz_change_percent                         C(  1)       241
+forw_mcz_change_direction                       C(  1)       242
+number_of_in_records                          BCD(  1)       243
+speech_version                                  C(  1)       244
+camel_call_reference                            C(  8)       245
+camel_exchange_id_ton                           C(  1)       253
+camel_exchange_id                               C(  9)       254
+scp_connection                                  C(  1)       263
+number_of_all_in_records                      BCD(  1)       264
+call_reference_time                             C(  7)       265
+routing_category                                C(  1)       272
+forwarding_msrn_ton                             C(  1)       273
+forwarding_msrn                                 C( 12)       274
+optimal_routing_indicator                       C(  1)       286
+add_routing_category                            W(  1)       287
+inside_user_plane_index                       BCD(  2)       289
+inside_control_plane_index                    BCD(  2)       291
+in_bnc_connection_type                          C(  1)       293
+outside_user_plane_index                      BCD(  2)       294
+outside_control_plane_index                   BCD(  2)       296
+out_bnc_connection_type                         C(  1)       298
+forwarded_to_last_ex_id_ton                     C(  1)       299
+forwarded_to_last_mcc                           C(  2)       300
+forwarded_to_last_mnc                           C(  2)       302
+forwarding_first_mcc                            C(  2)       304
+forwarding_first_mnc                            C(  2)       306
+forwarding_last_ex_id_ton                       C(  1)       308
+forwarding_last_mcc                             C(  2)       309
+forwarding_last_mnc                             C(  2)       311
+radio_network_type                              C(  1)       313
+rate_adaption                                   C(  1)       314
+loc_routing_number                              C( 12)       315
+loc_routing_number_ton                          C(  1)       327
+npdb_query_status                               C(  1)       328
+in_circuit_group_name                           C( 16)       329
+out_circuit_group_name                          C( 16)       345
+loc_routing_number_orig                         C(  1)       361
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+
+< GAP::ST=A,UF=NORMAL,FT=4,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:04:35
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      4
+MESSAGE NUMBER:   dd95
+FORMAT TYPE NAME: ROAM
+RECORD LENGTH:    223
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+intermediate_record_number                    BCD(  1)        25
+intermediate_charging_ind                       C(  1)        26
+number_of_ss_records                          BCD(  1)        27
+calling_number                                  C( 10)        28
+called_imsi                                     C(  8)        38
+called_number                                   C( 12)        46
+called_category                                 C(  1)        58
+called_msrn                                     C( 12)        59
+in_circuit_group                              BCD(  2)        71
+in_circuit                                    BCD(  2)        73
+out_circuit_group                             BCD(  2)        75
+out_circuit                                   BCD(  2)        77
+basic_service_type                              C(  1)        79
+basic_service_code                              C(  1)        80
+facility_usage                                  C(  4)        81
+set_up_start_time                               C(  7)        85
+in_channel_allocated_time                       C(  7)        92
+charging_start_time                             C(  7)        99
+charging_end_time                               C(  7)       106
+roam_mcz_duration                             BCD(  3)       113
+cause_for_termination                          DW(  1)       116
+data_volume                                     W(  1)       120
+call_type                                       C(  1)       122
+roam_mcz_tariff_class                         BCD(  3)       123
+roam_mcz_pulses                               BCD(  2)       126
+leg_call_reference                              C(  5)       128
+intermediate_chrg_cause                         C(  2)       133
+cug_interlock                                   C(  4)       135
+cug_outgoing_access                             C(  1)       139
+hot_billing_record_number                     BCD(  4)       140
+cug_information                                 C(  1)       144
+roam_mcz_change_percent                         C(  1)       145
+roam_mcz_change_direction                       C(  1)       146
+number_of_in_records                          BCD(  1)       147
+camel_call_reference                            C(  8)       148
+camel_exchange_id_ton                           C(  1)       156
+camel_exchange_id                               C(  9)       157
+scp_connection                                  C(  1)       166
+number_of_all_in_records                      BCD(  1)       167
+call_reference_time                             C(  7)       168
+routing_category                                C(  1)       175
+add_routing_category                            W(  1)       176
+inside_user_plane_index                       BCD(  2)       178
+inside_control_plane_index                    BCD(  2)       180
+in_bnc_connection_type                          C(  1)       182
+outside_user_plane_index                      BCD(  2)       183
+outside_control_plane_index                   BCD(  2)       185
+out_bnc_connection_type                         C(  1)       187
+selected_codec                                  C(  1)       188
+rate_adaption                                   C(  1)       189
+in_circuit_group_name                           C( 16)       190
+out_circuit_group_name                          C( 16)       206
+loc_routing_number_orig                         C(  1)       222
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+
+< GAP::ST=A,UF=NORMAL,FT=5,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:05:04
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      5
+MESSAGE NUMBER:   efcd
+FORMAT TYPE NAME: SUPS
+RECORD LENGTH:    167
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+ss_record_number                              BCD(  1)        25
+served_imsi                                     C(  8)        26
+served_imei                                     C(  8)        34
+served_number                                   C( 10)        42
+called_number                                   C( 12)        52
+served_subs_lac                                 W(  1)        64
+served_subs_ci                                  W(  1)        66
+supplementary_service_code                      C(  1)        68
+action                                          C(  1)        69
+in_channel_allocated_time                       C(  7)        70
+charging_time                                   C(  7)        77
+cause_for_termination                          DW(  1)        84
+result_indicator                                W(  1)        88
+parameters_length                               C(  1)        90
+parameters                                      C( 30)        91
+leg_call_reference                              C(  5)       121
+served_ms_classmark                             C(  1)       126
+basic_service_type                              C(  1)       127
+basic_service_code                              C(  1)       128
+hot_billing_record_number                     BCD(  4)       129
+basic_call_state_model                          C(  1)       133
+camel_call_reference                            C(  8)       134
+camel_exchange_id_ton                           C(  1)       142
+camel_exchange_id                               C(  9)       143
+call_reference_time                             C(  7)       152
+routing_category                                C(  1)       159
+add_routing_category                            W(  1)       160
+radio_network_type                              C(  1)       162
+served_subs_mcc                                 C(  2)       163
+served_subs_mnc                                 C(  2)       165
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+
+< GAP::ST=A,UF=NORMAL,FT=7,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:05:49
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      7
+MESSAGE NUMBER:   efcc
+FORMAT TYPE NAME: LOCA
+RECORD LENGTH:    103
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+served_imsi                                     C(  8)        25
+subs_old_lac                                    W(  1)        33
+subs_old_ex_id                                  C( 10)        35
+subs_new_lac                                    W(  1)        45
+subs_new_ex_id                                  C( 10)        47
+charging_time                                   C(  7)        57
+served_number_ton                               C(  1)        64
+served_number                                   C( 12)        65
+loc_up_indicator                                C(  1)        77
+number_of_in_records                          BCD(  1)        78
+call_reference_time                             C(  7)        79
+mme_ip_address                                  C( 17)        86
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+< GAP::ST=A,UF=NORMAL,FT=8,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:06:12
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      8
+MESSAGE NUMBER:   efc9
+FORMAT TYPE NAME: SMMO
+RECORD LENGTH:    151
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+calling_imsi                                    C(  8)        25
+calling_imei                                    C(  8)        33
+calling_number                                  C( 10)        41
+calling_category                                C(  1)        51
+calling_ms_classmark                            C(  1)        52
+dialled_digits                                  C( 12)        53
+sms_centre                                      C( 10)        65
+calling_subs_lac                                W(  1)        75
+served_subs_ci                                  C(  2)        77
+incoming_time                                   C(  7)        79
+cause_for_termination                          DW(  1)        86
+basic_service_type                              C(  1)        90
+basic_service_code                              C(  1)        91
+call_type                                       C(  1)        92
+msc_type                                        C(  1)        93
+sms_type                                        C(  1)        94
+hot_billing_record_number                     BCD(  4)        95
+tariff_class                                  BCD(  3)        99
+calling_vmsc_number                             C( 10)       102
+sms_length                                      C(  1)       112
+command_type                                    C(  1)       113
+message_reference                               C(  1)       114
+number_of_in_records                          BCD(  1)       115
+num_of_concatenated_sms                         C(  1)       116
+concatenated_record_number                      C(  1)       117
+concatenated_sms_reference                      W(  1)       118
+application_info                                C(  1)       120
+default_sms_handling                            C(  1)       121
+camel_sms_modification                          C(  2)       122
+call_reference_time                             C(  7)       124
+routing_category                                C(  1)       131
+add_routing_category                            W(  1)       132
+dialled_digits_ton                              C(  1)       134
+radio_network_type                              C(  1)       135
+served_subs_mcc                                 C(  2)       136
+served_subs_mnc                                 C(  2)       138
+called_imsi                                     C(  8)       140
+served_subs_ci_ext                              W(  1)       148
+ue_time_zone                                    C(  1)       150
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+
+
+< GAP::ST=A,UF=NORMAL,FT=9,OF=T,;
+
+LOADING PROGRAM VERSION 2.14-0
+
+MSCi      MSEFA                     2018-12-18  15:06:40
+
+DISPLAY OPERATION FOR SERVICE   0
+IN TABLE FORMAT
+
+
+FILENAME:       Y00AN1MX.IMG
+SERVICE:        00
+STATE:          ACTIVE
+USED FOR:       NORMAL
+BLOCK VERSION:  MY070300
+VERSION NUMBER: 025
+
+
+FORMAT TYPE:      9
+MESSAGE NUMBER:   efc8
+FORMAT TYPE NAME: SMMT
+RECORD LENGTH:    146
+
+HEADER:
+FIELD NAME                                   DATA TYPE  POSITION
+
+record_length                                   W(  1)         0
+record_type                                   BCD(  1)         2
+record_number                                 BCD(  4)         3
+record_status                                   C(  1)         7
+check_sum                                       W(  1)         8
+call_reference                                  C(  5)        10
+exchange_id                                     C( 10)        15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DATA:
+FIELD NAME                                   DATA TYPE  POSITION
+
+called_imsi                                     C(  8)        25
+called_imei                                     C(  8)        33
+called_number                                   C( 12)        41
+called_category                                 C(  1)        53
+called_ms_classmark                             C(  1)        54
+called_subs_lac                                 W(  1)        55
+served_subs_ci                                  C(  2)        57
+sms_centre                                      C( 10)        59
+incoming_time                                   C(  7)        69
+delivery_time                                   C(  7)        76
+cause_for_termination                          DW(  1)        83
+basic_service_type                              C(  1)        87
+basic_service_code                              C(  1)        88
+call_type                                       C(  1)        89
+msc_type                                        C(  1)        90
+sms_type                                        C(  1)        91
+hot_billing_record_number                     BCD(  4)        92
+tariff_class                                  BCD(  3)        96
+calling_vmsc_number                             C( 10)        99
+sms_length                                      C(  1)       109
+number_of_in_records                          BCD(  1)       110
+num_of_concatenated_sms                         C(  1)       111
+concatenated_record_number                      C(  1)       112
+concatenated_sms_reference                      W(  1)       113
+application_info                                C(  1)       115
+call_reference_time                             C(  7)       116
+routing_category                                C(  1)       123
+add_routing_category                            W(  1)       124
+calling_number                                  C( 11)       126
+calling_number_ton                              C(  1)       137
+radio_network_type                              C(  1)       138
+served_subs_mcc                                 C(  2)       139
+served_subs_mnc                                 C(  2)       141
+served_subs_ci_ext                              W(  1)       143
+ue_time_zone                                    C(  1)       145
+
+
+
+COMMAND EXECUTED
+
+
+DYNAMIC DATA HANDLING COMMAND <GA_>
+<
+
+
+
+
+
+
+IBT:WDU,S,CF2967,DAT,,,,H
+
+/* ENTER BYTES PER LINE:
+
+   HEXADECIMAL 2 ... 16   DEFAULT 16
+   ASCII       2 ... 132  DEFAULT 80  */
+
+IBT:WDU,S,CF2967,DAT,,,,H,;
+TYPING MSEFA OMU WDU-S
+FILE NODEF:TRAFFIC/ CF2967.DAT:0
+
+CONFIRM COMMAND EXECUTION: Y/N ? Y
+
+FILE NODEF:TRAFFIC/ CF2967.DAT:0
+00000200  29 00 00 01 01 00 83 1F 89 19 08 03 F0 FF FF FF   )...............
+00000210  FF FF 66 49 61 10 98 65 04 00 09 26 10 48 11 07   ..fIa..e...&.H..
+00000220  10 17 20 4D 59 07 03 00 FF 97 00 08 66 49 61 10   .. MY.......fIa.
+00000230  00 CA 3C 5B 42 FF 07 82 89 19 08 03 F0 FF FF FF   ..<[B...........
+00000240  FF FF 34 12 11 04 19 86 04 F8 53 65 91 50 57 64   ..4.......Se.PWd
+00000250  30 F0 89 19 58 83 98 05 FF FF FF FF 00 07 39 06   0...X.........9.
+00000260  17 59 47 FF FF FF FF FF FF FF 89 19 01 50 00 FF   .YG..........P..
+00000270  FF FF FF FF 37 7E C0 28 09 48 11 07 10 17 20 00   ....7~.(.H.... .
+00000280  00 00 00 00 22 03 01 00 FF FF FF FF 00 00 00 89   ...."...........
+00000290  19 08 03 F0 FF FF FF FF FF 99 FF 27 00 01 01 00   ...........'....
+000002A0  00 00 00 00 00 09 48 11 07 10 17 20 00 00 00 02   ......H.... ....
+000002B0  02 34 F2 11 FF FF FF FF FF FF FF FF FF 00 00 FF   .4..............
+000002C0  76 01 01 67 49 61 10 00 3A A4 3E 41 A5 1B B1 89   v..gIa..:.>A....
+000002D0  19 08 03 F0 FF FF FF FF FF 00 00 00 34 12 11 03   ............4...
+000002E0  65 65 03 F0 53 77 26 80 40 65 54 F0 89 19 83 90   ee..Sw&.@eT.....
+000002F0  57 78 FF FF FF FF 00 07 34 12 31 09 87 73 77 F4   Wx......4.1..sw.
+00000300  FF FF FF FF FF FF FF FF 04 89 19 32 16 86 42 FF   ...........2..B.
+00000310  FF FF FF FF FF FF FF 90 21 63 61 28 F4 FF FF FF   ........!ca(....
+00000320  FF FF FF BF 91 B9 23 89 19 08 03 F0 FF FF FF FF   ......#.........
+00000330  FF BF 91 37 A3 FF FF FF FF FF FF FF FF FF FF FF   ...7............
+
+ENTER RETURN TO CONTINUE
+
+
+
+
